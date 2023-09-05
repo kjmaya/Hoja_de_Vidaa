@@ -1,0 +1,106 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.pageGrid {
+    display: grid;
+    grid-template-areas: "cab cab"
+        "menu cont"
+        "foot foot";
+    /* grid-template-columns: 200px 80%;*/
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    width: 100vw;
+    height: 100vh;
+}
+
+.tex {
+    color: #591059;
+}
+
+.tex1 {
+    color: #591059;
+}
+
+.cabecera {
+    text-shadow:
+        -1px -1px 1px #aaa,
+        0px 4px 1px rgba(0, 0, 0, 0.5),
+        4px 4px 5px rgba(0, 0, 0, 0.7),
+        0px 0px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    color: #591059;
+    grid-area: cab;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    background-color: #CAA5E6;
+    border-radius: 15px;
+    color: #ffffff;
+    grid-area: menu;
+    width: 300px;
+    height: 700px;
+}
+ 
+.contenido {
+    background-color: #32449e;
+    color: #010101;
+    background-color: #FFFFFF;
+    grid-area: cont;
+    display: grid;
+    grid-template-areas: "tx01  tex02"
+        "tx03  tx04";
+    grid-gap: 20px;
+
+}
+
+.piePagina {
+    background-color: #FFF;
+    color: #591059;
+    grid-area: foot;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ECE1FE;
+    border-radius: 15px;
+    min-width: 150px;
+    min-height: 150px;
+    border: 1px solid #000000;
+}
+
+.card:hover h2 {
+    color: #b517d8;
+    text-decoration: underline;
+    border: 1px solid #710897;
+    cursor: pointer;
+}
+
+.tx1 {
+    grid-area: tx01;
+}
+
+.tx2 {
+    grid-area: tx02;
+}
+
+.tx3 {
+    grid-area: tx03;
+
+}
+
+.tx4 {
+    grid-area: tx04;
+
+}
